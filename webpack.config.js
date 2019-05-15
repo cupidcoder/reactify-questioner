@@ -1,6 +1,6 @@
-const path = require("path");
+const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const clearBuildPlugin = new CleanWebpackPlugin({
   dry: true,
@@ -9,7 +9,7 @@ const clearBuildPlugin = new CleanWebpackPlugin({
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: path.join(__dirname, 'public', 'index.html'),
-  filename: "./index.html"
+  filename: './index.html'
 });
 
 module.exports = {
@@ -19,9 +19,9 @@ module.exports = {
         test: /\.(js)|(jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"]
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
       },
@@ -29,14 +29,14 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: "style-loader",
+            loader: 'style-loader',
           },
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: true,
               importLoaders: 2,
-              localIdentName: "[name]_[local]_[hash:base64]",
+              localIdentName: '[name]_[local]_[hash:base64]',
               sourceMap: true,
               camelCase: true,
             }
