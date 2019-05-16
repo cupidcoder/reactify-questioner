@@ -1,0 +1,10 @@
+.Footer {
+  color: #ffffff;
+  background-color: #202C39;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.Footer p {
+  font-family: 'Tangerine', cursive;
+}

@@ -1,0 +1,29 @@
+.Header {
+  display: flex;
+  height: 4rem;
+  padding: 1rem;
+  background-color: #f39e3e;
+  justify-content: space-between;
+}
+
+.Logo {
+  color: #ffffff;
+}
+
+.Logo h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 4rem;
+}
+
+.Nav ul {
+  list-style: none;
+}
+
+.Nav ul li {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.Nav ul li:not(:last-child) {
+  border-right: 1px solid #202C39;
+}

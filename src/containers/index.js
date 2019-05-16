@@ -1,7 +1,3 @@
-import LandingPage from './LandingPage';
-import SecondPage from './SecondPage';
+import LandingPage from './LandingPage/LandingPage';
 
-export {
-  LandingPage,
-  SecondPage
-};
+export default LandingPage;
