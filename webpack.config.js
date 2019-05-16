@@ -60,6 +60,13 @@ module.exports = {
   ],
   output: {
     filename: 'index.bundle.js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
+    publicPath: process.env.ASSET_PATH || '/',
+  },
+  devServer: {
+    contentBase: './build',
+    hot: true,
+    publicPath: process.env.ASSET_PATH || '/',
+    historyApiFallback: true
   }
 };
