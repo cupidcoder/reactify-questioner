@@ -1,0 +1,48 @@
+.SignInFormContainer {
+  margin-top: 6rem;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.SignInFormContainer h2 {
+  text-align: center;
+  color: #305b8c;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.SignInForm {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 6px 3px 11px 3px rgba(128,128,128,0.61);
+  border-radius: 3px;
+}
+
+.Input input {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+
+.Button {
+  width: 8.4rem;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.FooterText {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.FooterText a:link, .FooterText a:visited {
+  color: #305b8c;
+}
+
+.FooterText a:hover, .FooterText a:active {
+  color: #305b8c;
+}

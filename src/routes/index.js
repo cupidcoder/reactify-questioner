@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import LandingPage from '../containers';
+import { LandingPage, SignUp, SignIn } from '../containers';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import SignUp from '../containers/SignUp/SignUp';
+
 
 const Layout = () => (
   <Router>
@@ -11,6 +11,7 @@ const Layout = () => (
     <Switch>
       <Route path='/' component={LandingPage} exact />
       <Route path='/signup' component={SignUp} />
+      <Route path='/signin' component={SignIn} />
     </Switch>
     <Footer />
   </Router>
