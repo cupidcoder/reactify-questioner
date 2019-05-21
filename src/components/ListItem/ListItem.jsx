@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './ListItem.css';
 
-const ListItem = ({ text }) => (
+const ListItem = ({ text, path }) => (
   <li className={style.ListItem}>
-    {text}
+    <Link to={path}>
+      {text}
+    </Link>
   </li>
 );
 
