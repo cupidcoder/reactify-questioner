@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
-import style from './LandingPage.css';
+import style from './Landing.css';
 
 const LandingPage = () => (
   <section className={style.LandingPage}>
@@ -8,7 +9,9 @@ const LandingPage = () => (
       <h1>Don&rsquo;t leave your attendees guessing</h1>
       <div className={style.Button}>
         <Button>
-          Sign in
+          <Link to='/signup'>
+            Sign up
+          </Link>
         </Button>
       </div>
     </div>
