@@ -1,8 +1,11 @@
 .Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   color: #ffffff;
   background-color: #202C39;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .Footer p {
