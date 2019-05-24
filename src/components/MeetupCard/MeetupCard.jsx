@@ -1,17 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './MeetupCard.css';
 
 const MeetupCard = ({ name, description, location }) => (
-  <div className={style.MeetupCard}>
-    <div className={style.MeetupCardContent}>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <p>
-        <i className='fas fa-map-marker-alt' />
-        {location}
-      </p>
+  <Link to='meetups/page' className={style.Link}>
+    <div className={style.MeetupCard}>
+      <div className={style.MeetupCardContent}>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <p>
+          <i className='fas fa-map-marker-alt' />
+          {location}
+        </p>
+      </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default MeetupCard;

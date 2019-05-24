@@ -2,7 +2,8 @@ import LandingPage from './Landing/Landing';
 import SignUp from './SignUp/SignUp';
 import SignIn from './SignIn/SignIn';
 import Meetups from './Meetups/Meetups';
+import MeetupPage from './MeetupPage/MeetupPage';
 
 export {
-  LandingPage, SignUp, SignIn, Meetups
+  LandingPage, SignUp, SignIn, Meetups, MeetupPage
 };
