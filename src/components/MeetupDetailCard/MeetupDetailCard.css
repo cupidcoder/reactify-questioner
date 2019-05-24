@@ -1,0 +1,28 @@
+.MeetupDetailCard {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  border-bottom: 1px solid rgba(46,62,72,.12);
+}
+
+.EventDetail {
+  padding: 1rem;
+}
+
+.EventDetail h2 {
+  margin-bottom: 0.8rem;
+}
+
+.EventDetail p i {
+  padding-right: 0.5rem;
+  color: #305b8c;
+}
+
+.Description {
+  padding: 1rem;
+  border-left: 1px solid rgba(46,62,72,.12);
+  width: 70%;
+  text-align: justify;
+}

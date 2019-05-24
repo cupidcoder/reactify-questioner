@@ -1,0 +1,22 @@
+.RsvpButtons {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  border-bottom: 1px solid rgba(46,62,72,.12);
+}
+
+.RsvpText h3 {
+  font-size: 1.4rem;
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+.RsvpResponse {
+  display: flex;
+}
+
+.RsvpResponse button:not(:last-child) {
+  margin-right: 0.7rem;
+}

@@ -28,9 +28,6 @@ const Meetups = () => {
     },
     {
       no: 8, name: 'NodeJs', description: 'Pushing code forward', location: 'Ikeja, Lagos'
-    },
-    {
-      no: 9, name: 'NodeJs', description: 'Pushing code forward', location: 'Ikeja, Lagos'
     }
   ];
   return (

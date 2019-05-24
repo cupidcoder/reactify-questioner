@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
-  LandingPage, SignUp, SignIn, Meetups
+  LandingPage, SignUp, SignIn, Meetups, MeetupPage
 } from '../containers';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -17,6 +17,7 @@ const Layout = () => (
         <Route path='/signup' component={SignUp} />
         <Route path='/signin' component={SignIn} />
         <Route path='/meetups' component={Meetups} exact />
+        <Route path='/meetups/page' component={MeetupPage} exact />
       </Switch>
       <Footer />
     </Router>
