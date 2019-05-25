@@ -2,6 +2,7 @@ import React from 'react';
 import BaseLayout from '../BaseContainer/BaseContainer';
 import MeetupDetailCard from '../../components/MeetupDetailCard/MeetupDetailCard';
 import RsvpButtons from '../../components/RsvpButtons/RsvpButtons';
+import QuestionInput from '../../components/QuestionInput/QuestionInput';
 import style from './MeetupPage.css';
 
 const MeetupPage = () => {
@@ -19,6 +20,7 @@ const MeetupPage = () => {
       <div className={style.MeetupPage}>
         <MeetupDetailCard {...meetupDetail} />
         <RsvpButtons />
+        <QuestionInput />
       </div>
     </BaseLayout>
   );
