@@ -1,0 +1,20 @@
+.QuestionInput {
+  width: 90%;
+  margin: 2rem auto;
+  border-bottom: 1px solid rgba(46,62,72,.12);
+  padding-bottom: 1rem;
+}
+
+.InputGroup {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.Input {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
