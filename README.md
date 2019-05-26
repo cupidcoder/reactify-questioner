@@ -1,2 +1,2 @@
-# reactify-questioner
+# reactify-questioner &middot; [![CircleCI](https://circleci.com/gh/cupidcoder/reactify-questioner.svg?style=svg)](https://circleci.com/gh/cupidcoder/reactify-questioner) [![Maintainability](https://api.codeclimate.com/v1/badges/5557951f8d0d1fec5a4b/maintainability)](https://codeclimate.com/github/cupidcoder/reactify-questioner/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/5557951f8d0d1fec5a4b/test_coverage)](https://codeclimate.com/github/cupidcoder/reactify-questioner/test_coverage)
 Conversion of the previously built questioner application to ReactJs.
