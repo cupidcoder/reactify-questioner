@@ -1,0 +1,13 @@
+.UserStatFeed {
+  padding: 1rem;
+}
+
+.UserStatFeed h4 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.UserStatFeed h3 {
+  font-size: 1.2rem;
+}
+
