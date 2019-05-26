@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Button from '../Button/Button';
+import { incrementAction } from '../../actions/testAction';
 import style from './MeetupForm.css';
 
 class MeetupForm extends Component {
   render() {
+    const { increase } = this.props;
     return (
       <div className={style.MeetupFormContainer}>
         <div className={style.MeetupForm}>
@@ -22,7 +25,7 @@ class MeetupForm extends Component {
               <input type='text' id='date' placeholder='Date' />
             </div>
             <div className={style.Button}>
-              <Button>Create</Button>
+              <Button onClick={() => increase()}>Create</Button>
             </div>
           </form>
         </div>
@@ -31,4 +34,8 @@ class MeetupForm extends Component {
   }
 }
 
-export default MeetupForm;
+const mapDispatchToProps = dispatch => ({
+  increase: () => dispatch(incrementAction())
+});
+
+export default connect(null, mapDispatchToProps)(MeetupForm);
