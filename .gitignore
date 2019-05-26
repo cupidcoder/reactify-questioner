@@ -9,3 +9,6 @@ build/
 
 # .env file
 .env
+
+# test coverage
+coverage/
