@@ -6,3 +6,6 @@ build/
 
 # Miscellanous
 .DS_Store
+
+# .env file
+.env

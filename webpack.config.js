@@ -1,6 +1,7 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const clearBuildPlugin = new CleanWebpackPlugin({
   dry: true,
@@ -56,7 +57,8 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   plugins: [htmlPlugin,
-    clearBuildPlugin
+    clearBuildPlugin,
+    new Dotenv()
   ],
   output: {
     filename: 'index.bundle.js',
