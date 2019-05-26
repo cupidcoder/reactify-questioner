@@ -3,6 +3,7 @@ import BaseLayout from '../BaseContainer/BaseContainer';
 import MeetupDetailCard from '../../components/MeetupDetailCard/MeetupDetailCard';
 import RsvpButtons from '../../components/RsvpButtons/RsvpButtons';
 import QuestionInput from '../../components/QuestionInput/QuestionInput';
+import QuestionList from '../../components/QuestionList/QuestionList';
 import style from './MeetupPage.css';
 
 const MeetupPage = () => {
@@ -21,6 +22,7 @@ const MeetupPage = () => {
         <MeetupDetailCard {...meetupDetail} />
         <RsvpButtons />
         <QuestionInput />
+        <QuestionList />
       </div>
     </BaseLayout>
   );

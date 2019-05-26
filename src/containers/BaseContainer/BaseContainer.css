@@ -1,4 +1,5 @@
 .BaseContainer {
   max-width: 1140px;
   margin: 3rem auto;
+  flex-grow: 8;
 }
