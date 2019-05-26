@@ -4,7 +4,8 @@ import SignIn from './SignIn/SignIn';
 import Meetups from './Meetups/Meetups';
 import MeetupPage from './MeetupPage/MeetupPage';
 import CreateMeetup from './CreateMeetup/CreateMeetup';
+import Profile from './Profile/Profile';
 
 export {
-  LandingPage, SignUp, SignIn, Meetups, MeetupPage, CreateMeetup
+  LandingPage, SignUp, SignIn, Meetups, MeetupPage, CreateMeetup, Profile
 };
