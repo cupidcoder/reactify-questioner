@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing Should correctly save snapshot of the Landing 1`] = `ShallowWrapper {}`;

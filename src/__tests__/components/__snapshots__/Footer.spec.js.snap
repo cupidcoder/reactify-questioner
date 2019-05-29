@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Should correctly save snapshot of the footer 1`] = `ShallowWrapper {}`;
