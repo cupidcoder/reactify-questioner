@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionInput Should correctly save snapshot of the QuestionInput 1`] = `ShallowWrapper {}`;

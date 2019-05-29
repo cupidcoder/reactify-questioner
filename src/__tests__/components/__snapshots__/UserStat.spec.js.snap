@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserStat Should correctly save snapshot of the UserStat 1`] = `ShallowWrapper {}`;

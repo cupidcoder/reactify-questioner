@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RsvpButtons Should correctly save snapshot of the RsvpButtons 1`] = `ShallowWrapper {}`;
