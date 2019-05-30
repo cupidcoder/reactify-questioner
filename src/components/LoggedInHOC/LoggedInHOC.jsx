@@ -9,7 +9,7 @@ const LoggedInHOC = ({ component: Component, token, ...rest }) => (
     render={() => {
       if (token && isTokenValid(token)) {
         window.localStorage.setItem('token', token);
-        return <Redirect to='/meetups' />;
+        window.location.href = '/meetups';
       }
       return <Component />;
     }}

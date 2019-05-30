@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LoggedInHOC from '../components/LoggedInHOC/LoggedInHOC';
 import {
-  LandingPage, SignUp, SignIn, Meetups, MeetupPage, CreateMeetup, Profile
+  LandingPage, SignUp, SignIn, MeetupsComponent, MeetupPage, CreateMeetup, Profile
 } from '../containers';
 import { HeaderComponent } from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -17,7 +17,7 @@ const Layout = () => (
         <LoggedInHOC path='/' component={LandingPage} exact />
         <LoggedInHOC path='/signup' component={SignUp} />
         <LoggedInHOC path='/signin' component={SignIn} />
-        <Route path='/meetups' component={Meetups} exact />
+        <Route path='/meetups' component={MeetupsComponent} exact />
         <Route path='/meetups/page' component={MeetupPage} exact />
         <Route path='/meetups/create' component={CreateMeetup} exact />
         <Route path='/user/profile' component={Profile} />
