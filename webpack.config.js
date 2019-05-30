@@ -60,7 +60,9 @@ module.exports = {
   },
   plugins: [htmlPlugin,
     clearBuildPlugin,
-    new Dotenv()
+    new Dotenv({
+      systemvars: true
+    })
   ],
   output: {
     filename: 'index.bundle.js',
