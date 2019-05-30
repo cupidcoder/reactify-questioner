@@ -27,16 +27,6 @@ class SignUpForm extends Component {
     };
   }
 
-  /**
-   *
-   * @param {object} token
-   */
-  loginUser = (token) => {
-    const { history } = this.props;
-    window.localStorage.setItem('token', token);
-    history.push('/meetups');
-  };
-
   handleInputChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   }
@@ -89,7 +79,7 @@ class SignUpForm extends Component {
     const validPasswordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]){8}/;
     if (!validPasswordRegex.test(e.target.value)) {
       this.setState({
-        passwordError: 'should be at least 8 characters',
+        passwordError: 'Should be alphanumeric and atleast 8 characters long',
         isPasswordValid: false
       });
     } else {
@@ -109,18 +99,13 @@ class SignUpForm extends Component {
     await signUpRequest({
       firstname, lastname, email, password
     });
-    const { status, message, data: { token } } = this.props;
+    const { status, message } = this.props;
     if (status === 201) {
       toast(`${message}. Redirecting...`, {
-        type: 'success',
-        onClose: () => this.loginUser(token)
+        type: 'success'
       });
     } else if (status === 400) {
       toast(message, {
-        type: 'error'
-      });
-    } else {
-      toast('Something very strange happened.', {
         type: 'error'
       });
     }
