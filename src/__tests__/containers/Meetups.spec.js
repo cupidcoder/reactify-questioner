@@ -6,6 +6,7 @@ describe('Meetups', () => {
   it('Should correctly save snapshot of the Meetups page', () => {
     const props = {
       isLoading: false,
+      getMeetupsRequest: jest.fn(),
       data: []
     };
     const wrapper = shallow(<Meetups {...props} />);

@@ -4,7 +4,7 @@ import style from './ListItem.css';
 
 const ListItem = ({ text, path }) => (
   <li className={style.ListItem}>
-    <Link to={path}>
+    <Link to={path || '#'}>
       {text}
     </Link>
   </li>

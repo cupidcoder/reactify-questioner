@@ -25,7 +25,8 @@ class SignInForm extends Component {
     this.setState({ [e.target.id]: e.target.value });
   }
 
-  handleFormSubmit = async () => {
+  handleFormSubmit = async (e) => {
+    e.preventDefault();
     const { email, password } = this.state;
     const { signInRequest } = this.props;
     await signInRequest({ email, password });

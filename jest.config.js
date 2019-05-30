@@ -13,7 +13,7 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(jpg|png|svg|gif)$': 'babel-jest'
   },
-  modulePathIgnorePatterns: ['store/', 'src/index.jsx', 'src/reducers/index.js', 'routes/index.js'],
+  modulePathIgnorePatterns: ['store/', 'src/index.jsx', 'src/reducers/index.js', 'routes/index.js', 'config/', 'utils/'],
   transform: {
     '.+\\.(css|styl|less|sass|scss)$':
       '<rootDir>/node_modules/jest-css-modules-transform',
