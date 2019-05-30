@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import NavBar from '../NavBar/NavBar';
 import style from './Header.css';
 
-const Header = ({ token }) => {
+const Header = ({ token, isAdmin }) => {
   let items = [
     { no: 1, text: 'Sign in', path: '/signin' },
     { no: 2, text: 'Sign up', path: '/signup' }
@@ -12,9 +12,16 @@ const Header = ({ token }) => {
   const isLoggedIn = () => {
     if (token) {
       items = [
-        { no: 1, text: 'Profile', path: '#' },
-        { no: 2, text: 'Logout', path: '#' }
+        { no: 1, text: 'Profile', path: '/user/profile' },
+        { no: 2, text: 'Logout' }
       ];
+      if (isAdmin) {
+        items = [
+          { no: 1, text: 'Create Meetup', path: '/meetups/create' },
+          { no: 2, text: 'Profile', path: '/user/profile' },
+          { no: 3, text: 'Logout' }
+        ];
+      }
     }
   };
   isLoggedIn();
@@ -38,7 +45,10 @@ const Header = ({ token }) => {
 
 const mapStateToProps = (state) => {
   if (state.auth.data) {
-    return { token: state.auth.data.token };
+    return {
+      token: state.auth.data.token,
+      isAdmin: state.auth.data.user.isAdmin
+    };
   }
   return { token: undefined };
 };

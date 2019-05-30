@@ -1,9 +1,13 @@
 .MeetupCard {
   box-shadow: 6px 3px 11px 3px rgba(128,128,128,0.61);
   border-radius: 3px;
+  flex-basis: 20%;
+  font-size: 0.8rem;
+  height: 6rem;
+  width: 9rem;
+  position: relative;
   padding: 1.5rem;
-  flex: 0 1 calc(24% - 1rem);
-  margin-bottom: 1.5rem;
+  margin: 1.5rem;
   cursor: pointer;
   transition: 0.5s transform;
 }

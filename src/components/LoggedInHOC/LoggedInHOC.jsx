@@ -1,9 +1,11 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import isTokenValid from '../../utils';
+import isTokenValid from '../../utils/isTokenValid';
 
-const LoggedInHOC = ({ component: Component, token, ...rest }) => (
+const LoggedInHOC = ({
+  component: Component, token, setAdmin, ...rest
+}) => (
   <Route
     {...rest}
     render={() => {
