@@ -1,11 +1,11 @@
 import LandingPage from './Landing/Landing';
 import SignUp from './SignUp/SignUp';
 import SignIn from './SignIn/SignIn';
-import Meetups from './Meetups/Meetups';
+import { MeetupsComponent } from './Meetups/Meetups';
 import MeetupPage from './MeetupPage/MeetupPage';
 import CreateMeetup from './CreateMeetup/CreateMeetup';
 import Profile from './Profile/Profile';
 
 export {
-  LandingPage, SignUp, SignIn, Meetups, MeetupPage, CreateMeetup, Profile
+  LandingPage, SignUp, SignIn, MeetupsComponent, MeetupPage, CreateMeetup, Profile
 };
