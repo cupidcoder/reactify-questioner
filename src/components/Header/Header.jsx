@@ -47,7 +47,7 @@ const mapStateToProps = (state) => {
   if (state.auth.data) {
     return {
       token: state.auth.data.token,
-      isAdmin: state.auth.data.user.isAdmin
+      isAdmin: state.auth.data.user ? state.auth.data.user.isAdmin : false
     };
   }
   return { token: undefined };
