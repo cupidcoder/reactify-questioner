@@ -9,17 +9,24 @@ const Header = ({ token, isAdmin }) => {
     { no: 1, text: 'Sign in', path: '/signin' },
     { no: 2, text: 'Sign up', path: '/signup' }
   ];
+
+  const logout = () => {
+    window.localStorage.removeItem('auth');
+    window.localStorage.removeItem('token');
+    window.location.href = '/';
+  };
+
   const isLoggedIn = () => {
     if (token) {
       items = [
         { no: 1, text: 'Profile', path: '/user/profile' },
-        { no: 2, text: 'Logout' }
+        { no: 2, text: 'Logout', clicked: logout }
       ];
       if (isAdmin) {
         items = [
           { no: 1, text: 'Create Meetup', path: '/meetups/create' },
           { no: 2, text: 'Profile', path: '/user/profile' },
-          { no: 3, text: 'Logout' }
+          { no: 3, text: 'Logout', clicked: logout }
         ];
       }
     }
