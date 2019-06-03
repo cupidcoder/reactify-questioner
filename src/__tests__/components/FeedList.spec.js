@@ -4,6 +4,9 @@ import FeedList from '../../components/FeedList/FeedList';
 
 describe('Feed List', () => {
   it('Should correctly save snapshot of the FeedList component', () => {
+    const questions = [
+
+    ];
     const FeedListWrapper = mount(<FeedList />);
     expect(FeedListWrapper).toMatchSnapshot();
   });
