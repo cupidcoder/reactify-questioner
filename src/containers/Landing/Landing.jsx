@@ -8,11 +8,11 @@ const LandingPage = () => (
     <div className={style.HeroText}>
       <h1>Don&rsquo;t leave your attendees guessing</h1>
       <div className={style.Button}>
-        <Button>
-          <Link to='/signup'>
-            Sign up
-          </Link>
-        </Button>
+        <Link to='/signup'>
+          <Button>
+              Sign up
+          </Button>
+        </Link>
       </div>
     </div>
   </section>
