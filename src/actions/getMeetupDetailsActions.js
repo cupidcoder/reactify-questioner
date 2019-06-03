@@ -32,7 +32,7 @@ export const handleGetMeetupDetailsFailure = payload => ({
  * @param {integer} meetupId
  */
 export const getMeetupDetailsRequest = meetupId => async (dispatch) => {
-  dispatch(handleGetMeetupDetailsBegin);
+  dispatch(handleGetMeetupDetailsBegin());
   try {
     const response = await axios.get(`/meetups/${meetupId}`);
     return dispatch(handleGetMeetupDetailsSuccess(response.data));
