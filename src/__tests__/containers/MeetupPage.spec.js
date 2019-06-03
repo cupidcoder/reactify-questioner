@@ -4,7 +4,14 @@ import { MeetupPage } from '../../containers/MeetupPage/MeetupPage';
 
 describe('MeetupPage', () => {
   it('Should correctly save snapshot of the MeetupPage', () => {
-    const wrapper = shallow(<MeetupPage />);
+    const props = {
+      computedMatch: {
+        params: {
+          meetupId: 2
+        }
+      }
+    };
+    const wrapper = shallow(<MeetupPage {...props} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

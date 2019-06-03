@@ -4,7 +4,7 @@ import Skeleton from 'react-skeleton-loader';
 import BaseLayout from '../BaseContainer/BaseContainer';
 import MeetupDetailCard from '../../components/MeetupDetailCard/MeetupDetailCard';
 import RsvpButtons from '../../components/RsvpButtons/RsvpButtons';
-import QuestionInput from '../../components/QuestionInput/QuestionInput';
+import { QuestionInputComponent } from '../../components/QuestionInput/QuestionInput';
 import QuestionList from '../../components/QuestionList/QuestionList';
 import { getMeetupDetailsRequest } from '../../actions/getMeetupDetailsActions';
 import { getMeetupQuestionsRequest } from '../../actions/getMeetupQuestionsActions';
@@ -22,13 +22,18 @@ class MeetupPage extends Component {
   }
 
   render() {
-    const { meetupDetails, meetupQuestions, isLoadingMeetupQuestions } = this.props;
+    const {
+      computedMatch: { params: { meetupId } },
+      meetupDetails,
+      meetupQuestions,
+      isLoadingMeetupQuestions
+    } = this.props;
     return (
       <BaseLayout>
         <div className={style.MeetupPage}>
           <MeetupDetailCard {...meetupDetails} />
           <RsvpButtons />
-          <QuestionInput />
+          <QuestionInputComponent meetupId={meetupId} />
           {(!isLoadingMeetupQuestions && <QuestionList questions={meetupQuestions} />) || (
           <Skeleton width='100%' height='90px' />
           )}

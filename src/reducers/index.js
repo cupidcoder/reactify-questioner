@@ -4,6 +4,7 @@ import { getMeetupsReducer } from './getMeetupsReducer';
 import { createMeetupReducer } from './createMeetupReducer';
 import { getMeetupDetailsReducer } from './getMeetupDetailsReducer';
 import { getMeetupQuestionsReducer } from './getQuestionsReducer';
+import { postQuestionReducer } from './postQuestionReducer';
 
 
 const Reducer = combineReducers({
@@ -11,7 +12,8 @@ const Reducer = combineReducers({
   getMeetups: getMeetupsReducer,
   createMeetup: createMeetupReducer,
   meetupDetails: getMeetupDetailsReducer,
-  meetupQuestions: getMeetupQuestionsReducer
+  meetupQuestions: getMeetupQuestionsReducer,
+  postQuestion: postQuestionReducer
 });
 
 export default Reducer;
